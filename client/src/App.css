@@ -1,0 +1,45 @@
+.buttons,
+.button-logout {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.button-logout{
+    background-color: tomato;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+.button-login{
+    background-color: teal;
+    margin-right: 10px;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+.button-register{
+    background-color: slateblue;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+.button {
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+  }
