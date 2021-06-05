@@ -5,8 +5,7 @@ const app = express();
 
 dotenv.config();
 app.use(express.json());
-//omkar
-//omkarpass
+
 
 const PORT = process.env.PORT || 8800
 mongoose
