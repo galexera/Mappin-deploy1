@@ -22,7 +22,7 @@ const Map = ({currentUser}) => {
   const [newPlaceId, setnewPlaceId] = useState(null);
   const [title, setTitle] = useState(null);
   const [desc, setDesc] = useState(null);
-  const [star, setStar] = useState(0);
+  const [star, setStar] = useState(1);
 
   const [viewport, setViewport] = useState({
     width: "100vw",
@@ -122,7 +122,7 @@ const Map = ({currentUser}) => {
                     {Array(p.rating).fill(<StarIcon className="star" />)}
 
                   </div>
-                  <label>Info</label>
+                  <label>Information</label>
                   <p>{p.info}</p>
                   <span className="username">created by <b>{p.username}</b></span>
                   <span className="date">{format(p.createdAt)} </span>
@@ -142,9 +142,9 @@ const Map = ({currentUser}) => {
             <div>
               <form onSubmit={handleSubmit}>
                 <label>Title</label>
-                <input placeholder="enter title" onChange={(e) => setTitle(e.target.value)} />
+                <input placeholder="Enter title" onChange={(e) => setTitle(e.target.value)} />
                 <label>Review</label>
-                <textarea placeholder="say something about this place" onChange={(e) => setDesc(e.target.value)} />
+                <textarea placeholder="Say something about this place" onChange={(e) => setDesc(e.target.value)} />
                 <label>Rating</label>
                 <select onChange={(e) => setStar(e.target.value)}>
                   <option value="1" >1</option>
