@@ -45,11 +45,11 @@ const Register = ( {setshowRegister}) => {
 
                 <form onSubmit={handleSubmit} style = {{
                     width: 250,
-                    height: 300,
+                    height: 350,
                     display: 'flex',
                     flexDirection :"column",
                     justifyContent: 'space-around',
-                    color :'white'}} >
+                    color :'white'}}>
                     
                     <h1>Register</h1>
                     <div class="textbox">
