@@ -43,7 +43,14 @@ const Register = ( {setshowRegister}) => {
 
             <div className="outer-form">
 
-                <form onSubmit={handleSubmit} >
+                <form onSubmit={handleSubmit} style = {{
+                    width: 250,
+                    height: 300,
+                    display: 'flex',
+                    flexDirection :"column",
+                    justifyContent: 'space-around',
+                    color :'white'}} >
+                    
                     <h1>Register</h1>
                     <div class="textbox">
                         <i class="fas fa-user"></i>

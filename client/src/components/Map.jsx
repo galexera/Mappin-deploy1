@@ -107,9 +107,9 @@ const Map = ({currentUser}) => {
                 onClose={() => { setCurrentPlaceId(null) }} >
                 <div className="card">
                   <label>Place</label>
-                  <h4 className="place">{p.title}</h4>
+                  <h4 className="place" style= {{margin  : 0}} >{p.title}</h4>
                   <label>Review</label>
-                  <p> {p.desc}</p>
+                  <p style= {{margin  : 0}} > {p.desc}</p>
                   <label>Rating</label>
                   <div className="stars">
                     {Array(p.rating).fill(<StarIcon className="star" />)}

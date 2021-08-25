@@ -19,24 +19,22 @@ label {
     color: gold;
 }
 
-form {
+/* form {
     width: 250px;
     height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* justify-content: space-between; */
+} */
 
-}
-
-/* form {
+form {
   width: 250px;
   height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   color: rgb(88, 87, 87);
-} */
+}
 
 input {
     border: none;
