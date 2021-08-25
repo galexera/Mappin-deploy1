@@ -1,6 +1,6 @@
 .card
 {
-    width: 250px;
+    width: 280px;
     height: 300px;
     display: flex;
     flex-direction: column ;
@@ -19,13 +19,23 @@ label {
     color: gold;
 }
 
-form {
+/* form {
     width: 250px;
-    /* height: 250px; */
+    height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+} */
+
+form {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: rgb(88, 87, 87);
 }
+
 input {
     border: none;
     border-bottom: 1px solid gray;

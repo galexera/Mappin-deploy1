@@ -13,10 +13,7 @@ import mapboxgl from 'mapbox-gl';
 // eslint-disable-next-line import/no-webpack-loader-syntax
 mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
 
-
 const Map = ({currentUser}) => {
-
-
   const [pins, setPins] = useState([]);
   const [currentPlaceId, setCurrentPlaceId] = useState(null);
   const [newPlaceId, setnewPlaceId] = useState(null);
@@ -47,7 +44,6 @@ const Map = ({currentUser}) => {
   const handleMarkerClick = (id, lat, long) => {
     setCurrentPlaceId(id)
     setViewport({ ...viewport, latitude: lat, longitude: long });
-
   }
 
   const handleAddclick = (e) => {
@@ -56,6 +52,7 @@ const Map = ({currentUser}) => {
       lat, long
     })
   }
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     const newPin = {
@@ -75,10 +72,6 @@ const Map = ({currentUser}) => {
       console.log(err);
     }
   };
-  
-  
- 
-
 
   return (
     <div className="outer-map">
@@ -123,7 +116,6 @@ const Map = ({currentUser}) => {
 
                   </div>
                   <label>Information</label>
-                  <p>{p.info}</p>
                   <span className="username">created by <b>{p.username}</b></span>
                   <span className="date">{format(p.createdAt)} </span>
                 </div>

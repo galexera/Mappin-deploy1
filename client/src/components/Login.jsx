@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useRef, useState } from "react";
-import "./login.css";
+// import "./login.css";
 
 const Login = ({setshowLogin, myStorage ,setcurrentUser ,setshowMap }) => {
     const [success, setSuccess] = useState(false);
@@ -46,7 +46,13 @@ const Login = ({setshowLogin, myStorage ,setcurrentUser ,setshowMap }) => {
 
             <div className="outer-form">
 
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit} style = {{
+                    width: 250,
+                    height: 300,
+                    display: 'flex',
+                    flexDirection :"column",
+                    justifyContent: 'space-around',
+                    color :'white'}} >
                     <h1>Login</h1>
                     <div class="textbox">
                         <i class="fas fa-user"></i>
